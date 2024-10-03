@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-item {
+    position: relative;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ff9800;
+    transform: translateY(-5px);
+  }
+  
+  .navbar-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ff9800;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-list {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .navbar-link {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  
+    .navbar-link {
+      font-size: 0.9rem;
+    }
+  }
+  

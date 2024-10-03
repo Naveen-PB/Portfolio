@@ -1,0 +1,97 @@
+/* General styling for the about section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f9;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 900px;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+.about-photo img {
+  border-radius: 10%;
+  width: 250px;
+  height: 350px;
+  border: 3px solid #6c63ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-photo img:hover {
+  transform: scale(1.05);
+}
+
+.about-details {
+  max-width: 600px;
+}
+
+.about-details h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #333;
+  border-bottom: 2px solid #6c63ff;
+  padding-bottom: 10px;
+}
+
+.about-details p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.personal-details h3 {
+  font-size: 2rem;
+  margin-top: 35px;
+  color: #6c63ff;
+  border-bottom: 2px solid #6c63ff;
+  padding-bottom: 10px;
+}
+
+.personal-details ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.personal-details li {
+  margin-bottom: 12px;
+}
+
+/* Hover effects for better interaction */
+.about-details h2:hover,
+.personal-details h3:hover {
+  color: #ff6584;
+  border-bottom: 2px solid #ff6584;
+}
+
+.personal-details li:hover {
+  color: #6c63ff;
+}
+
+/* Adding subtle hover effects for better interaction */
+.about-details p:hover {
+  color: #444;
+}
+
+.about-section:hover {
+  background-color: #eef1ff;
+}

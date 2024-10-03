@@ -1,0 +1,66 @@
+/* Main container that holds all project rows */
+.project-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Row for each project */
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Content of the project (title and description) */
+  .project-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .project-content h3 {
+    font-size: 2rem;  /* Increase the font size of the project title */
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .project-content p {
+    font-size: 1.2rem;  /* Increase the font size of the project description */
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Images container */
+  .project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;  /* Align images to the right */
+  }
+  
+  .project-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .project-row {
+      flex-direction: column;
+    }
+  
+    .project-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .project-images img {
+      width: 100%;
+    }
+  }
+  
